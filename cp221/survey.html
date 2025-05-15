@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Survey page of a web developer">
+  <meta name="keywords" content="Survey, Web Developer, Portfolio">
+  <meta name="author" content="Your Name">
+  <title>Survey</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+      <button onclick="toggleTheme()">Dark Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Survey</h1>
+      <p>Please take a moment to fill out this survey.</p>
+      <form id="survey-form">
+        <label for="name">Full name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Where did you first hear about me?</label><br>
+        <input type="radio" id="friend" name="source" value="Friend">
+        <label for="friend">Social media</label><br>
+        <input type="radio" id="search" name="source" value="Search Engine">
+        <label for="search">Search engine</label><br>
+        <input type="radio" id="social" name="source" value="Social Media">
+        <label for="social">youtube</label><br>
+        <input type="radio" id="social" name="source" value="Social Media">
+        <label for="social">Tick-tock</label><br>
+        <input type="radio" id="social" name="source" value="Social Media">
+        <label for="social">News-paper</label><br><br>
+
+        <label>What addition features would you like to see in my future projects?</label><br>
+        <input type="checkbox" id="feature1" name="features" value="Feature 1">
+        <label for="feature1">To-do lists</label><br>
+        <input type="checkbox" id="feature2" name="features" value="Feature 2">
+        <label for="feature2">Dynamic content display</label><br>
+        <input type="checkbox" id="feature3" name="features" value="Feature 3">
+        <label for="feature3">Few pages</label><br>
+        <input type="checkbox" id="feature3" name="features" value="Feature 3">
+        <label for="feature3">Many pages</label><br>
+        <input type="checkbox" id="feature3" name="features" value="Feature 3">
+        <label for="feature3">None</label><br>
+
+        <label for="feedback">More coment feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="5"></textarea><br><br>
+
+        <button style="background-color:yellow;" type="submit">Submit form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 razaro masungwa (T23-03-13250). All rights reserved.</p>
+  </footer>
+</body>
+</html>
